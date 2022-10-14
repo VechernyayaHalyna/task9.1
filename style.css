@@ -1,0 +1,82 @@
+body {
+    background: linear-gradient(81deg, #ddb35f, #7409c7);
+    height: 1vh;
+    position: relative;
+}
+
+.body-title {
+    color: #DAA520;
+    margin-left: 420px;
+    margin-top: 20px;
+    margin-bottom: -8px;
+    font-style: oblique;
+}
+
+.smile {
+    font-style: normal;
+}
+
+.bgd {
+    position: absolute;
+    top: 500%;
+    left: 32%;
+    margin-top: 150px;
+}
+
+.card {
+    margin-top: -20px;
+    background-color: #f5f5dcee;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.card-header {
+    background: linear-gradient(#DB7093, #FFB6C1);
+    border-bottom: #FFB6C1;
+}
+
+.m-0 {
+    font-weight: 500;
+    color: #8B008B;
+    text-shadow: 1px 2px 1.5px rgba(0,0,0,0.3)
+}
+
+.card-body {
+    background-color: #FFB6C1;
+}
+
+.card-title {
+    text-shadow: 1px 2px 1.5px rgba(0,0,0,0.3);
+    color: #9b5981;
+    font-weight: 600;
+}
+
+.result {
+    text-shadow: none;
+    color: #8B008B;
+    font-weight: 500;
+}
+
+.submit-button{
+    background: linear-gradient(135deg, #e55d87 0%, #5fc3e4 100%);
+    color: #5e143f;
+    font-weight: 600;
+    border-radius: 6px;
+    border: none;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.reset-button {
+    background: linear-gradient(90deg, #ee5c87, #f1a4b5, #d587b3);
+    color: #5e143f;
+    font-weight: 600;
+    border-radius: 6px;
+    border: none;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+
+
+

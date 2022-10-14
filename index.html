@@ -9,33 +9,38 @@
     <link rel="stylesheet" href="style.css" type="text/css"/>
 </head>
 <body>
-<div class="container">
-    <div class="row game-card align-items-center">
-        <div class="col col-md-6 offset-md-3">
-            <div class="card text-center">
-                <div class="card-header">
-                    <p class="m-0">Окно результатов генерации</p>
-                </div>
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col">
-                            <h3 class="card-title">Фамилия: <span id="surnameOutput">Иванов</span></h3>
-                            <h4>Имя и отчество: <span id="firstNameOutput">Иван</span> <span id="middleNameOutput">Иванович</span></h4>
-                            <p>
-                                <span id="genderOutput">Мужской</span>
-                                <span class="comma">, </span>
-                                <span id="birthDateOutput">1 января</span> <span id="birthYearOutput">2000 года</span>
-                                <span class="comma">, </span>
-                                <span id="professionOutput">профессия</span>
-                            </p>
+    <h1 class="body-title">Генератор случайных пользователей <span class="smile">&#128526;</span></h1>
+    <div class="bgd">
+        <div class="container">
+            <div class="row game-card align-items-center">
+                <div class="col col-md-6 offset-md-3">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <p class="m-0">Окно результатов генерации</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col">
+                                    <h3 class="card-title">Фамилия: <span class="result" id="surnameOutput">Иванов</span></h3>
+                                    <h4 class="card-title">Имя и отчество: <span class="result" id="firstNameOutput">Иван</span> <span class="result" id="middleNameOutput">Иванович</span></h4>
+                                    <h5 class="card-title">
+                                        Пол: <span class="result" id="genderOutput">Мужской</span>
+                                    </h5>
+                                    <h5 class="card-title">
+                                        Дата рождения: <span class="result" id="birthDateOutput">1 января</span> <span class="result" id="birthYearOutput">2000 года</span>
+                                    </h5>
+                                    <h5 class="card-title">
+                                        Профессия: <span class="result" id="professionOutput">моряк</span>
+                                    </h5>
+                                </div>
+                            </div>
+                            <button type="submit" class="submit-button" id="resultGenerate">Сгенерируем свой результат?</button>
+                            <button type="reset" class="reset-button" id="resultReset">Очистка результатов генерации</button>
                         </div>
                     </div>
-                    <button type="submit" id="resultGenerate">Сгенерируем свой результат?</button>
-                    <button type="reset" id="resultReset">Очистка результатов генерации</button>
                 </div>
             </div>
         </div>
-    </div>
 </div>
 <script src="personGenerator.js"></script>
 <script src="init.js"></script>
