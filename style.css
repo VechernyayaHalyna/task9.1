@@ -25,7 +25,7 @@ body {
 
 .card {
     margin-top: -20px;
-    background-color: #f5f5dcee;
+    background-color: #FFB6C1;
     width: 300px;
     border-radius: 10px;
 }
@@ -33,6 +33,7 @@ body {
 .card-header {
     background: linear-gradient(#DB7093, #FFB6C1);
     border-bottom: #FFB6C1;
+    border-radius: 10px;
 }
 
 .m-0 {
@@ -43,6 +44,7 @@ body {
 
 .card-body {
     background-color: #FFB6C1;
+    border-radius: 10px;
 }
 
 .card-title {
@@ -77,6 +79,10 @@ body {
     margin-top: 10px;
 }
 
+.btn:hover,
+.btn:active {
+    padding: 8px;
+}
 
 
 
