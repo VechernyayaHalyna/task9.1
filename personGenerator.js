@@ -120,35 +120,51 @@ const personGenerator = {
     
     randomGender: function () {
             
-            let gender = this.randomIntNumber();
+        let gender = this.randomIntNumber();
+        console.log(gender);
             return gender === 1 ? this.GENDER_MALE : this.GENDER_FEMALE;
 
     },
     
-    randomFirstName: function() {
-        if (this.randomGender() === this.GENDER_MALE) {
-            return this.randomValue(this.firstNameMaleJson);
+    randomFirstName: function () {
+        let gender = this.person.gender;
+        let firstNameMale = this.randomValue(this.firstNameMaleJson);
+        let firstNameFemale = this.randomValue(this.firstNameFemaleJson);
+        if (gender === this.GENDER_MALE) {
+            console.log(firstNameMale);
+            return firstNameMale;
         } else {
-            return this.randomValue(this.firstNameFemaleJson);
+            console.log(firstNameFemale);
+            return firstNameFemale;
         }
         
     },
 
 
-     randomSurname: function() {
-        if (this.randomGender() === this.GENDER_MALE) {
-            return this.randomValue(this.surnameJson);
-        } else {
-            return (this.randomValue(this.surnameJson) + 'а');;
+    randomSurname: function () {
+        let gender = this.person.gender;
+        let surnameMale = this.randomValue(this.surnameJson);
+        let surnameFemale = (this.randomValue(this.surnameJson) + 'а');
+         if (gender === this.GENDER_MALE) {
+             console.log(surnameMale);
+            return surnameMale;
+         } else {
+             console.log(surnameFemale);
+            return surnameFemale;
         }
         
     },
      
     randomMiddleName: function () {
-        if (this.randomGender() === this.GENDER_MALE) {
-            return this.randomValue(this.middleNameJson);
+        let gender = this.person.gender;
+        let middleNameMale = this.randomValue(this.middleNameJson);
+        let middleNameFemale = this.randomValue(this.middleNameJson).replace('ич', 'на');
+        if (gender === this.GENDER_MALE) {
+            console.log(middleNameMale);
+            return middleNameMale;
         } else {
-            return this.randomValue(this.middleNameJson).replace('ич', 'на');
+            console.log(middleNameFemale);
+            return middleNameFemale;
         }
     },
     
@@ -170,10 +186,15 @@ const personGenerator = {
     },
 
     randomProfession: function () {
-        if (this.randomGender() === this.GENDER_MALE) {
-            return this.randomValue(this.maleProfessionJson);
+        let gender = this.person.gender;
+        let maleProfession = this.randomValue(this.maleProfessionJson);
+        let femaleProfession = this.randomValue(this.femaleProfessionJson);
+        if (gender === this.GENDER_MALE) {
+            console.log(maleProfession);
+            return maleProfession;
         } else {
-            return this.randomValue(this.femaleProfessionJson);
+            console.log(femaleProfession);
+            return femaleProfession;
         }
     },
 
